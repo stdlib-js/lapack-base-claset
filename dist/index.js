@@ -1,0 +1,11 @@
+"use strict";var x=function(i,n){return function(){return n||i((n={exports:{}}).exports,n),n.exports}};var E=x(function(er,b){
+var _=require('@stdlib/ndarray-base-assert-is-row-major/dist'),I=require('@stdlib/strided-base-reinterpret-complex64/dist'),J=require('@stdlib/ndarray-base-nullary-loop-interchange-order/dist'),S=require('@stdlib/complex-float32-real/dist'),V=require('@stdlib/complex-float32-imag/dist'),j=require('@stdlib/math-base-special-fast-min/dist');function m(i,n,f,c,l,s,r,a){var e,o,v;for(e=s+r,o=a,v=0;v<j(i,n);v++)l[o]=f,l[o+1]=c,o+=e;return l}function K(i,n,f,c,l,s,r,a,e,o){var v,q,t,u,O,w,p,h,y,g;for(g=J([i,n],[a,e]),t=g.sh,w=g.sx,u=t[0],O=t[1],v=w[0],q=w[1]-u*w[0],p=o,y=0;y<O;y++){for(h=0;h<u;h++)r[p]=f,r[p+1]=c,p+=v;p+=q}return m(i,n,l,s,r,a,e,o),r}function P(i,n,f,c,l,s,r,a,e,o){var v,q,t,u;if(q=o,_([a,e])){for(u=0;u<i;u++){for(v=q+u*e,t=u;t<n;t++)r[v]=f,r[v+1]=c,v+=e;q+=a}return m(i,n,l,s,r,a,e,o),r}for(u=0;u<n;u++){for(v=q,t=0;t<=j(u,i-1);t++)r[v]=f,r[v+1]=c,v+=a;q+=e}return m(i,n,l,s,r,a,e,o),r}function Q(i,n,f,c,l,s,r,a,e,o){var v,q,t,u;if(q=o,_([a,e])){for(u=0;u<i;u++){for(v=q,t=0;t<=j(u,n-1);t++)r[v]=f,r[v+1]=c,v+=e;q+=a}return m(i,n,l,s,r,a,e,o),r}for(u=0;u<n;u++){for(v=q+u*a,t=u;t<i;t++)r[v]=f,r[v+1]=c,v+=a;q+=e}return m(i,n,l,s,r,a,e,o),r}function W(i,n,f,c,l,s,r,a,e){var o,v,q,t,u;return o=I(s,0),r*=2,a*=2,e*=2,v=S(c),q=V(c),t=S(l),u=V(l),i==="upper"?P(n,f,v,q,t,u,o,r,a,e):i==="lower"?Q(n,f,v,q,t,u,o,r,a,e):K(n,f,v,q,t,u,o,r,a,e),s}b.exports=W
+});var U=x(function(vr,T){
+var X=require('@stdlib/blas-base-assert-is-layout/dist'),F=require('@stdlib/error-tools-fmtprodmsg/dist'),Y=E();function Z(i,n,f,c,l,s,r,a){var e,o;if(!X(i))throw new TypeError(F('nullFx',i));if(i==="column-major")e=1,o=a;else{if(a<c)throw new RangeError(F('nullG9',c,a));e=a,o=1}return Y(n,f,c,l,s,r,e,o,0)}T.exports=Z
+});var z=x(function(ur,k){
+var $=E();function L(i,n,f,c,l,s,r,a,e){return $(i,n,f,c,l,s,r,a,e)}k.exports=L
+});var G=x(function(nr,C){
+var D=require('@stdlib/utils-define-nonenumerable-read-only-property/dist'),B=U(),M=z();D(B,"ndarray",M);C.exports=B
+});var N=require("path").join,d=require('@stdlib/utils-try-require/dist'),A=require('@stdlib/assert-is-error/dist'),rr=G(),R,H=d(N(__dirname,"./native.js"));A(H)?R=rr:R=H;module.exports=R;
+/** @license Apache-2.0 */
+//# sourceMappingURL=index.js.map
