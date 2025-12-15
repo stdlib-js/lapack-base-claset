@@ -34,6 +34,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`4d295c9`](https://github.com/stdlib-js/stdlib/commit/4d295c9c9c7d47ed6b9ba728a5f0f70da2338905) - **docs:** improve doctests for complex number instances in `lapack/base/claset` [(#8976)](https://github.com/stdlib-js/stdlib/pull/8976) _(by Divyanshu, Athan Reines)_
 -   [`39ae040`](https://github.com/stdlib-js/stdlib/commit/39ae04030bb6dd7785b0d5c60846623815c6818b) - **docs:** improve doctests for complex number instances in `lapack/base/claset` [(#8950)](https://github.com/stdlib-js/stdlib/pull/8950) _(by Sagar Ratna Chaudhary)_
 -   [`01e7bd4`](https://github.com/stdlib-js/stdlib/commit/01e7bd455c657f195c00412a97f3ea6bbef99af9) - **docs:** add missing requires and update example code in TSDoc declarations _(by Philipp Burckhardt)_
 -   [`4ebbd97`](https://github.com/stdlib-js/stdlib/commit/4ebbd97f55188dd986e9b98b26972c3729b1f6e4) - **docs:** fix TypeScript declarations doctest lint errors _(by Philipp Burckhardt)_
@@ -52,9 +53,10 @@ This release closes the following issue:
 
 ### Contributors
 
-A total of 4 people contributed to this release. Thank you to the following contributors:
+A total of 5 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
+-   Divyanshu
 -   Mohammad Bin Aftab
 -   Philipp Burckhardt
 -   Sagar Ratna Chaudhary
