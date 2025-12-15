@@ -70,8 +70,6 @@ Sets the off-diagonal elements and the diagonal elements of a single-precision c
 ```javascript
 var Complex64Array = require( '@stdlib/array-complex64' );
 var Complex64 = require( '@stdlib/complex-float32-ctor' );
-var realf = require( '@stdlib/complex-float32-real' );
-var imagf = require( '@stdlib/complex-float32-imag' );
 
 var A = new Complex64Array( 4 );
 
@@ -81,22 +79,10 @@ var beta = new Complex64( 3.0, 4.0 );
 claset( 'row-major', 'all', 2, 2, alpha, beta, A, 2 );
 
 var z = A.get( 0 );
-// returns <Complex64>
-
-var re = realf( z );
-// returns 3.0
-
-var im = imagf( z );
-// returns 4.0
+// returns <Complex64>[ 3.0, 4.0 ]
 
 z = A.get( 1 );
-// returns <Complex64>
-
-re = realf( z );
-// returns 1.0
-
-im = imagf( z );
-// returns 2.0
+// returns <Complex64>[ 1.0, 2.0 ]
 ```
 
 The function has the following parameters:
@@ -117,8 +103,6 @@ Note that indexing is relative to the first index. To introduce an offset, use [
 ```javascript
 var Complex64Array = require( '@stdlib/array-complex64' );
 var Complex64 = require( '@stdlib/complex-float32-ctor' );
-var realf = require( '@stdlib/complex-float32-real' );
-var imagf = require( '@stdlib/complex-float32-imag' );
 
 // Initial array:
 var A0 = new Complex64Array( 5 );
@@ -132,13 +116,7 @@ var beta = new Complex64( 3.0, 4.0 );
 claset( 'row-major', 'all', 2, 2, alpha, beta, A1, 2 );
 
 var z = A0.get( 1 );
-// returns <Complex64>
-
-var re = realf( z );
-// returns 3.0
-
-var im = imagf( z );
-// returns 4.0
+// returns <Complex64>[ 3.0, 4.0 ]
 ```
 
 #### claset.ndarray( uplo, M, N, alpha, beta, A, sa1, sa2, oa )
@@ -148,8 +126,6 @@ Sets the off-diagonal elements and the diagonal elements of a single-precision c
 ```javascript
 var Complex64Array = require( '@stdlib/array-complex64' );
 var Complex64 = require( '@stdlib/complex-float32-ctor' );
-var realf = require( '@stdlib/complex-float32-real' );
-var imagf = require( '@stdlib/complex-float32-imag' );
 
 var A = new Complex64Array( 4 );
 
@@ -159,22 +135,10 @@ var beta = new Complex64( 3.0, 4.0 );
 claset.ndarray( 'all', 2, 2, alpha, beta, A, 2, 1, 0 );
 
 var z = A.get( 0 );
-// returns <Complex64>
-
-var re = realf( z );
-// returns 3.0
-
-var im = imagf( z );
-// returns 4.0
+// returns <Complex64>[ 3.0, 4.0 ]
 
 z = A.get( 1 );
-// returns <Complex64>
-
-re = realf( z );
-// returns 1.0
-
-im = imagf( z );
-// returns 2.0
+// returns <Complex64>[ 1.0, 2.0 ]
 ```
 
 The function has the following parameters:
@@ -194,8 +158,6 @@ While [`typed array`][mdn-typed-array] views mandate a view offset based on the 
 ```javascript
 var Complex64Array = require( '@stdlib/array-complex64' );
 var Complex64 = require( '@stdlib/complex-float32-ctor' );
-var realf = require( '@stdlib/complex-float32-real' );
-var imagf = require( '@stdlib/complex-float32-imag' );
 
 var A = new Complex64Array( 5 );
 
@@ -205,22 +167,10 @@ var beta = new Complex64( 3.0, 4.0 );
 claset.ndarray( 'all', 2, 2, alpha, beta, A, 2, 1, 1 );
 
 var z = A.get( 0 );
-// returns <Complex64>
-
-var re = realf( z );
-// returns 0.0
-
-var im = imagf( z );
-// returns 0.0
+// returns <Complex64>[ 0.0, 0.0 ]
 
 z = A.get( 1 );
-// returns <Complex64>
-
-re = realf( z );
-// returns 3.0
-
-im = imagf( z );
-// returns 4.0
+// returns <Complex64>[ 3.0, 4.0 ]
 ```
 
 </section>
