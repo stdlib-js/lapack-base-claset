@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import claset from 'https://cdn.jsdelivr.net/gh/stdlib-js/lapack-base-claset@deno/mod.js';
+import claset from 'https://cdn.jsdelivr.net/gh/stdlib-js/lapack-base-claset@v0.1.1-deno/mod.js';
 ```
 
 #### claset( order, uplo, M, N, alpha, beta, A, LDA )
@@ -181,7 +181,7 @@ import Complex64 from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float32-cto
 import ndarray2array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-to-array@deno/mod.js';
 import numel from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-numel@deno/mod.js';
 import shape2strides from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-shape2strides@deno/mod.js';
-import claset from 'https://cdn.jsdelivr.net/gh/stdlib-js/lapack-base-claset@deno/mod.js';
+import claset from 'https://cdn.jsdelivr.net/gh/stdlib-js/lapack-base-claset@v0.1.1-deno/mod.js';
 
 var shape = [ 5, 8 ];
 var order = 'row-major';
