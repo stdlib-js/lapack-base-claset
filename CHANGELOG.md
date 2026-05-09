@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-04-08)
+## Unreleased (2026-05-09)
 
 <section class="commits">
 
@@ -12,6 +12,7 @@
 
 <details>
 
+-   [`68d17f7`](https://github.com/stdlib-js/stdlib/commit/68d17f71701c225b1b06a31608744834ad9d4d1b) - **docs:** improve doctests for complex number typed arrays in `lapack/base/claset` [(#12020)](https://github.com/stdlib-js/stdlib/pull/12020) _(by Karan Anand)_
 -   [`33e892a`](https://github.com/stdlib-js/stdlib/commit/33e892a03f8c628919751d82db58de78f90aa663) - **bench:** refactor to use string interpolation in `lapack/base/claset` [(#10092)](https://github.com/stdlib-js/stdlib/pull/10092) _(by Prajjwal Bajpai, Athan Reines)_
 
 </details>
@@ -24,9 +25,10 @@
 
 ### Contributors
 
-A total of 2 people contributed to this release. Thank you to the following contributors:
+A total of 3 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
+-   Karan Anand
 -   Prajjwal Bajpai
 
 </section>
