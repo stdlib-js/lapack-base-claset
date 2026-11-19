@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-10-03)
+## Unreleased (2026-11-19)
 
 <section class="commits">
 
@@ -12,6 +12,7 @@
 
 <details>
 
+-   [`78ad2fa`](https://github.com/stdlib-js/stdlib/commit/78ad2fa5dbb12ce808dec93197d5343745ff91b8) - **docs:** normalize trailing newlines in REPL help texts [(#16420)](https://github.com/stdlib-js/stdlib/pull/16420) _(by Philipp Burckhardt)_
 -   [`199bb30`](https://github.com/stdlib-js/stdlib/commit/199bb30fd65e5ae83acd090f856fd0401edb8acb) - **docs:** update descriptions [(#13481)](https://github.com/stdlib-js/stdlib/pull/13481) _(by Philipp Burckhardt)_
 -   [`68d17f7`](https://github.com/stdlib-js/stdlib/commit/68d17f71701c225b1b06a31608744834ad9d4d1b) - **docs:** improve doctests for complex number typed arrays in `lapack/base/claset` [(#12020)](https://github.com/stdlib-js/stdlib/pull/12020) _(by Karan Anand)_
 -   [`33e892a`](https://github.com/stdlib-js/stdlib/commit/33e892a03f8c628919751d82db58de78f90aa663) - **bench:** refactor to use string interpolation in `lapack/base/claset` [(#10092)](https://github.com/stdlib-js/stdlib/pull/10092) _(by Prajjwal Bajpai, Athan Reines)_
